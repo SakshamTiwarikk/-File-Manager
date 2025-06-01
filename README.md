@@ -37,6 +37,16 @@ A simple yet powerful web app to **create**, **read**, **update**, and **delete*
 
 🔹 Native Node.js fs module for file management
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/a5badca8-855b-4d58-aa41-206e5f0345b6)
+
+## Edit page
+
+![image](https://github.com/user-attachments/assets/7ef81982-7f9b-436f-b7f8-cdf302b36e95)
+
+
+
 ## 🛠️ Installation
 
 1. **Clone the repo:**
