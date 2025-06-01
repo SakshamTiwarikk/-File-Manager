@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Correct Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Edit Page</title>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+        <a class="text-blue-500 inline-block mb-10" href="/">Go Back to Home</a>
+        <form action="/edit" method="post">
+            <input
+                class="block w-1/4 rounded-md outline-none px-5 py-2 text-zinc-600 bg-zinc-800"
+                type="text"
+                placeholder="Previous name"
+                name="previous"
+                value="<%= filename %>"
+                readonly
+            />
+            <input
+                class="block w-1/4 mt-2 rounded-md outline-none px-5 py-2 resize-none bg-zinc-800"
+                type="text"
+                placeholder="New Name"
+                name="new"
+            />
+            <textarea
+                class="block w-2/4 min-h-[100px] h-full mt-2 rounded-md outline-none px-5 py-2 resize-none bg-zinc-800"
+                placeholder="Update your project description"
+                name="newDescription"
+            ></textarea>
+            <input
+                class="mt-2 bg-yellow-600 px-5 py-2 rounded-md"
+                type="submit"
+                value="Update"
+            />
+        </form>
+    </div>
+</body>
+</html>
